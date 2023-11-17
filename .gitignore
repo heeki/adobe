@@ -1,0 +1,9 @@
+# directories
+.vscode
+node_modules
+tmp
+
+# files
+etc/*.sh
+etc/*.json
+notes.md

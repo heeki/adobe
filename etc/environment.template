@@ -1,0 +1,19 @@
+PROFILE=your-cli-profile
+REGION=us-east-1
+BUCKET=your-deployment-bucket
+
+STOCK_CLIENT_ID=your-adobe-stock-client-id
+PHOTOSHOP_ORG_ID=your-adobe-org-id
+PHOTOSHOP_CLIENT_ID=your-adobe-photoshop-client-id
+PHOTOSHOP_CLIENT_SECRET=your-adobe-photoshop-client-secret
+$(eval PHOTOSHOP_ACCESS_KEY=$(shell cat tmp/photoshop_token.json | jq -r '.access_token'))
+
+export PHOTOSHOP_ORG_ID
+export PHOTOSHOP_CLIENT_ID
+export PHOTOSHOP_CLIENT_SECRET
+export PHOTOSHOP_ACCESS_KEY
+
+export AWS_ACCESS_KEY_ID=your-aws-access-key-id
+export AWS_SECRET_ACCESS_KEY=your-aws-secret-access-key
+export AWS_REGION=${REGION}
+export AWS_BUCKET=${BUCKET}
