@@ -20,3 +20,6 @@ photoshop.hello:
 photoshop.manifest:
 	node src/11_getDocumentManifest.js | jq > tmp/manifest.json
 	cat tmp/manifest.json | jq
+photoshop.cutout:
+	node src/01_createCutout.js | jq > tmp/cutout.json
+	cat tmp/cutout.json | jq
