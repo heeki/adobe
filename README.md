@@ -22,4 +22,8 @@ Test a search query for the Adobe Stock API: `make stock`
 Generate an access token for use with API calls: `make photoshop.generate_token`  
 View the access token: `make photoshop.view_token`  
 Make a basic hello world API call: `make photoshop.hello`  
-Request a document manifest via script: `make photoshop.manifest`
+Request a document manifest via script: `make photoshop.manifest`  
+Cutout backgrounds via script: `make photoshop.cutout`
+
+## Attribution
+Many of the code samples for using the Adobe API have been copied from this [repository](https://github.com/adobe/adobe-photoshop-api-sdk).
